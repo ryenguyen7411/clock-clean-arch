@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "max-nesting-depth": null,
+    "rule-empty-line-before": null,
+    "scss/percent-placeholder-pattern": "^[A-Za-z0-9-]+$",
+    "scss/at-extend-no-missing-placeholder": null,
+    "selector-max-compound-selectors": 5
+  },
+  "ignoreFiles": ["**/*.js*"]
+}
