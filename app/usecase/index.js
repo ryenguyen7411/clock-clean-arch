@@ -1,3 +1,7 @@
+import StopwatchUsecase from './stopwatch';
+
 export default function Usecase (repo) {
-  // TODO: pass repo as dependencies of child usecase
+  const stopwatch = new StopwatchUsecase(repo);
+
+  this.Stopwatch = () => stopwatch;
 }
