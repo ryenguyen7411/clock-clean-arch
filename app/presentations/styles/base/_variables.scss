@@ -5,58 +5,76 @@ $font-stack: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-ser
 %TITLE {
   font-size: 24px;
   font-weight: bold;
+  line-height: 31px;
 }
 %HEADING {
   font-size: 20px;
   font-weight: bold;
+  line-height: 25px;
+}
+%HEADING-2 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
 }
 %TEXT {
   font-size: 16px;
+  line-height: 21px;
 }
-
-/** -- NON SEMANTIC FONTSIZE -- */
-$fz-xxl: 24px;
-$fz-xl: 20px;
-$fz-lg: 16px;
-$fz-sm: 14px;
-$fz-xs: 12px;
-$fz-xxs: 8px;
+%HEADING-3 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+}
+%SMALL {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+}
 /** FONT - END */
 
 /** COLOR - START */
+$primary: #f7001e;
 $red: #f7001e;
-$light-red: #ffe0e0;
-$blue: #0897ee;
-$dark-blue: #0b78bb;
 $green: #7ed321;
+$blue: #0897ee;
 $orange: #f5a623;
 $purple: #a975d4;
-$white: #fff;
-$ash-gray: #f6f6f6;
-$light-gray: #ebebeb;
-$gray: #cbcbcb;
-$dark-gray: #9c9c9c;
+$light-red: #ffe0e0;
+
 $black: #333;
+$dark-gray: #9c9c9c;
+$gray: #cbcbcb;
+$light-gray: #ebebeb;
+$ash-gray: #f6f6f6;
+$white: #fff;
+
 $color-list: (
+  'primary' $primary,
   'red' $red,
-  'light-red' $light-red,
-  'blue' $blue,
-  'dark-blue' $dark-blue,
   'green' $green,
+  'blue' $blue,
   'orange' $orange,
   'purple' $purple,
-  'white' $white,
-  'ash-gray' $ash-gray,
-  'light-gray' $light-gray,
-  'gray' $gray,
-  'dark-gray' $dark-gray,
+  'light-red' $light-red,
+
   'black' $black,
+  'dark-gray' $dark-gray,
+  'gray' $gray,
+  'light-gray' $light-gray,
+  'ash-gray' $ash-gray,
+  'white' $white,
 );
-$facebook: #3e6ec0;
-$yellow-light: rgba(255, 255, 172, 0.3);
-$text-bg-gradient: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) 50%, transparent);
-$bg-popup: rgba(0, 0, 0, 0.3);
 /** COLOR - END */
+
+/** SPACING - START */
+$space-xxs: 5px;
+$space-xs: 10px;
+$space-s: 15px;
+$space-m: 20px;
+$space-l: 25px;
+$space-xl: 30px;
+/** SPACING - END */
 
 /** HELPER - START */
 
@@ -74,6 +92,9 @@ $bg-popup: rgba(0, 0, 0, 0.3);
 }
 %layer-lv1 {
   z-index: 1000 !important;
+}
+%layer-under {
+  z-index: -1;
 }
 
 $shadow-low: 0 2px 4px 0 rgba(0, 0, 0, 0.07);

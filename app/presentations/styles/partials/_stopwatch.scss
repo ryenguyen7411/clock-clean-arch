@@ -1,0 +1,57 @@
+.stopwatch {
+  background: $green;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 30px;
+  position: relative;
+
+  &-timer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    .input {
+      background: transparent;
+      border: 0;
+      color: inherit;
+      flex: 1;
+      font-size: 48px;
+      outline: none;
+      transition: all 0.3s;
+      &.empty {
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+      }
+      &:not(.empty) {
+        + .laps-wrapper {
+          flex: 2;
+        }
+      }
+    }
+    .laps {
+      @include scroll-nice($width: 2px);
+      max-height: 400px;
+      overflow: auto;
+      transition: all 0.3s;
+      &-wrapper {
+        flex: 0;
+      }
+    }
+    .lap {
+      align-items: center;
+      display: flex;
+      font-size: 20px;
+      height: 50px;
+      justify-content: space-between;
+      transition: all 0.3s;
+      .lap-num {
+        flex-basis: 50px;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -9,8 +9,6 @@ export default function HomePage () {
 
   return (
     <div className="home-page">
-      HOMEPAGE
-
       <Stopwatch usecase={usecase} />
     </div>
   );
